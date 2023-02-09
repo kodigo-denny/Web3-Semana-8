@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script src="Ejemplo11.js"></script>
+<script>
+    let objeto = new Alumno("Denny", "Herrera", "2222-2222", "San Salvador")
+    console.log(objeto.nombre)
+    console.log(objeto.apellido)
+    console.log(objeto.getNombreCompleto())
+
+    let objeto2 = new Alumno("Alexis", "Marin", "7777-7777", "San Salvador")
+    console.log(objeto2.nombre)
+    console.log(objeto2.apellido)
+    console.log(objeto2.getNombreCompleto())
+    objeto2.apellido = "Herrera Marin"
+    console.log(objeto2.getNombreCompleto())
+
+    console.log("objeto", objeto)
+    console.log("objeto 2:", objeto2)
+
+
+    console.log(Alumno.nombreClase())
+</script>
